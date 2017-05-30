@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tulis_diary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olifia.welcome.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <Button
+        android:text="Simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_edit"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/android_dropdown_arrays"
+        android:id="@+id/edit_mod"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/save_edit"
+        android:layout_alignStart="@+id/edit_isi" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="350dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_isi"
+        android:background="@android:drawable/edit_text"
+        android:hint="Mulai Mengetik Disini"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="top"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_judul"
+        android:layout_above="@+id/edit_mod" />
+
+    <TextView
+        android:text="Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:layout_alignStart="@+id/edit_mod" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edit_judul"
+        android:background="@android:drawable/edit_text"
+        android:hint="Tambahkan Judul..."
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
